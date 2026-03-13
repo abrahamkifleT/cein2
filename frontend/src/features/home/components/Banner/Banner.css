@@ -25,8 +25,9 @@
 .banner-text {
     position: absolute;
     left: 64px;
+    right: 64px;
     top: 490px;
-    width: 1272px;
+    max-width: 1272px;
     height: auto; /* Changed from fixed height to auto layout */
     display: flex;
     flex-direction: column;
