@@ -1,0 +1,75 @@
+.collection-container {
+    margin: 0;
+    width: 100%;
+    height: 724px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-text {
+    max-width: 1336px;
+    width: 100%;
+    height: 80px;
+    padding: 16px;
+    /* To align horizontally center within the full width container */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.collection-text p {
+    text-align: left;
+    margin: 0;
+}
+
+.collection-image {
+    max-width: 1338px;
+    width: 100%;
+    height: 532px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; /* Added to center it horizontally under the text */
+    box-sizing: border-box;
+}
+
+.collection-image > div {
+    /* Collection Item Card */
+    flex: 1; /* Allow cards to share available width to prevent overflow */
+    min-width: 0; /* Prevent flex items from overflowing their container */
+    height: 532px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* bottom */
+    align-items: flex-start; /* left */
+    padding: 32px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden; /* to ensure the image doesn't leak out */
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1; /* Place image behind the text */
+}
+
+.collection-image p {
+    width: 368px; /* w fill */
+    height: auto; /* auto height */
+    min-height: 24px; /* H Hug */
+    text-align: center; /* align center */
+    align-self: flex-start; /* align top within its layout, wait align center align top means text-align center, vertical align top? */
+    margin: 0;
+    position: relative;
+    z-index: 2; /* Ensure text is above the image */
+    color: white; /* Added for contrast against the image, might need adjusting based on design */
+    font-size: 20px; /* Optional default */
+    font-weight: 500;
+}
