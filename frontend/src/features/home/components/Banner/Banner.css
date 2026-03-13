@@ -1,0 +1,111 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 712px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center; /* Ensures the middle of the image is centered */
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Subtle overlay for text readability */
+    pointer-events: none;
+}
+
+.banner-text {
+    position: absolute;
+    left: 64px;
+    top: 490px;
+    width: 1272px;
+    height: auto; /* Changed from fixed height to auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.banner-text p {
+    margin: 0;
+    color: white;
+    font-size: 25px; /* Reduced from 48px */
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.banner-content button {
+    position: absolute;
+    left: 64px;
+    top: calc(490px + 96px + 40px); /* 490 (text top) + 96 (text height) + 40px gap */
+    width: 116px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px 18px;
+    cursor: pointer;
+    background-color: white; /* Assuming white button */
+    border: none;
+    pointer-events: auto; /* Ensure button remains clickable */
+}
+
+/* Medium Responsive Styles (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        height: 650px;
+    }
+    .banner-text {
+        left: 48px;
+        top: 420px;
+        width: 600px;
+    }
+    .banner-text p {
+        font-family: 'Styrene A Web', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    .banner-content button {
+        left: 48px;
+        top: calc(420px + 64px + 30px); /* 420 (text top) + approx 64 (text height) + 30px gap */
+    }
+}
+
+/* Mobile Responsive Styles (< 768px) */
+@media (max-width: 768px) {
+    .banner {
+        height: 598px;
+    }
+    .banner-text {
+        left: 32px;
+        top: 344px;
+        width: 311px;
+        height: 128px;
+    }
+    .banner-text p {
+        font-family: 'Styrene A Web', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .banner-content button {
+        left: 32px;
+        top: calc(344px + 128px + 20px); /* Exactly 20px gap on small screen as requested */
+    }
+    .banner img {
+        object-fit: cover; /* Specifically requested for small screens */
+    }
+}
