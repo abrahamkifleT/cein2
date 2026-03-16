@@ -1,12 +1,14 @@
 /* Base Styles - Mobile First (Small Screen) */
 .collection-container {
   margin: 0 auto;
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   height: 1333px;
   padding: 0; /* Padding is handled by children */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden; /* Added to contain potential overflow */
 }
 
 .collection-text {
