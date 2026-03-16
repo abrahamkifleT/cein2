@@ -13,7 +13,7 @@
   width: 100%;  /* Was 1336px — caused overflow on smaller screens */
   height: 56px;
   padding: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   box-sizing: border-box;
 }
 
