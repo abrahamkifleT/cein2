@@ -4,6 +4,7 @@ import Navbar from './components/layout/navbar/Navbar'
 import Footer from './components/layout/footer/Footer'
 import { CollectionProvider } from './contexts/collection.context'
 import { ProductProvider } from './contexts/product.context'
+import { InstagramFeedProvider } from './contexts/instagramFeed.context'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,9 @@ function App() {
         <Navbar />
         <CollectionProvider>
           <ProductProvider>
+            <InstagramFeedProvider>
               <Home />
+            </InstagramFeedProvider>
           </ProductProvider>
         </CollectionProvider>
         <Footer />
