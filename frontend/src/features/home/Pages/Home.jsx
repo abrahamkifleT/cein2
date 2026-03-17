@@ -4,6 +4,7 @@ import Banner from '../components/Banner/Banner'
 import Collection from '../components/Collection/Collection'
 import Product from '../components/Product/Product'
 import CollectionBanner from '../components/CollectionBanner/CollectionBanner'
+import FeatureCall from '../components/FeatureCall/FeatureCall'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Collection />
       <Product />
       <CollectionBanner />
+      <FeatureCall />
     </div>
   )
 }
