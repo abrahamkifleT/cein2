@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <CollectionProvider>
           <ProductProvider>
-            <Home />
+              <Home />
           </ProductProvider>
         </CollectionProvider>
         <Footer />
