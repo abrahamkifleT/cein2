@@ -39,12 +39,20 @@
   .collectionBanner-container {
     max-width: 100%;
     flex-direction: row;
+    justify-content: center;
     padding: 32px;
     gap: 20px;
+    height: auto;
   }
   
   .collectionBanner-card {
     flex: 1;
+    height: 500px;
+  }
+
+  .collectionBanner-card img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
