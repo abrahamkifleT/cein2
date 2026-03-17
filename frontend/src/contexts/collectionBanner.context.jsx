@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { collectionBanner } from "../data/collectionBanner.js"
+import { collections } from "../data/collectionBanner.js"
 
 export const CollectionBannerContext = createContext();
 
@@ -9,7 +9,8 @@ export const CollectionBannerProvider = ({ children }) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-       setCollectionBanner(collectionBanner);
+       // Using the imported 'collections' data
+       setCollectionBanner(collections);
        setLoading(false);
     }, []);
 
