@@ -76,24 +76,36 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .product-container {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    padding: 32px;
+    padding: 32px 0;
+  }
+
+  .product-text {
+    padding: 0 32px;
+    margin-bottom: 20px;
   }
 
   .product-image {
     width: 100%;
     height: auto;
-    overflow-x: visible;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+  }
+
+  .product-image::-webkit-scrollbar {
+    display: none;
   }
 
   .product-card {
     flex: 0 0 250px;
     width: 250px;
-    height: auto;
   }
 
   .product-card img {
@@ -103,10 +115,6 @@
 
   .product-plus {
     top: 252px;
-  }
-
-  .product-item {
-    width: 100%;
   }
 }
 
