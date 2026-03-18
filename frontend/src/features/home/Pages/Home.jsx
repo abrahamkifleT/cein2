@@ -6,6 +6,7 @@ import Product from '../components/Product/Product'
 import CollectionBanner from '../components/CollectionBanner/CollectionBanner'
 import FeatureCall from '../components/FeatureCall/FeatureCall'
 import InstagramFeed from '../components/InstagramFeed/InstagramFeed'
+import Promotion from '../components/Promotion/Promotion'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CollectionBanner />
       <FeatureCall />
       <InstagramFeed />
+      <Promotion />
     </div>
   )
 }
