@@ -31,7 +31,7 @@
   color: white;
   padding: 4px 8px;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Medium Screens (Tablets) */
@@ -44,7 +44,7 @@
     gap: 20px;
     height: auto;
   }
-  
+
   .collectionBanner-card {
     flex: 1;
     height: 500px;
