@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema  ({
     name: {
         type: String,
         required: true,
@@ -55,4 +55,4 @@ userSchema.methods.generateAccessToken = function(){
 
 const User = mongoose.model("User", userSchema);
 
-export default User;
+export default User;
