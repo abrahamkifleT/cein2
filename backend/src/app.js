@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import productRoutes from "./modules/product/product.routes.js";
 import userRoutes from "./modules/user/user.routes.js";
 import collectionRoutes from "./modules/collection/collection.routes.js";
+import blogRoutes from "./modules/blog/blog.routes.js";
 import authRoutes from "./modules/auth/auth.routes.js";
 import { errorMiddleware } from "./middleware/error.middleware.js";
 
@@ -24,6 +25,7 @@ app.use(cookieParser());
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/collections", collectionRoutes);
+app.use("/api/blogs", blogRoutes);
 app.use("/api/auth", authRoutes);
 
 // Error Middleware (should be last)
